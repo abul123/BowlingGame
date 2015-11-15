@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script src="js/script.js"></script>
+		<script>
+			window.onload = function(){
+				
+				var bowling = new BowlingGame();
+				
+				// Each Frame has two roll  
+				
+				// Last Frame 10 has advantage on roll depending on strike or spare
+				
+				// Frame No : 1 Strike
+				bowling.roll(10);
+				
+				// Frame No : 2 Spare
+				bowling.roll(5);
+				bowling.roll(5);
+				
+				// Frame No : 3 Spare
+				bowling.roll(6);
+				bowling.roll(4);
+				
+				// Frame No : 4
+				bowling.roll(1);
+				bowling.roll(1);
+				
+				// Frame No : 5
+				bowling.roll(1);
+				bowling.roll(1);
+				
+				// Frame No : 6
+				bowling.roll(1);
+				bowling.roll(1);
+				
+				// Frame No : 7 Strike
+				bowling.roll(10);
+			
+				
+				// Frame No : 8 Strike
+				bowling.roll(10);
+				
+				// Frame No : 9 Strike
+				bowling.roll(10);
+				
+				// Frame No : 10 with advantage on last roll as Strike 
+				bowling.roll(10);
+				bowling.roll(10);
+				bowling.roll(10);
+				
+				
+				alert(bowling.calculateScore());
+			}
+		</script>
+	</head>
+</html>
+
